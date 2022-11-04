@@ -6,7 +6,7 @@
     display: none;
   }
   .box {
-    background-color: transparent;
+   display: none;
     .number {
       margin-left: -100px;
       background: #ffffff;
@@ -18,12 +18,9 @@
   }
 }
 @media screen and (max-width: 760px) {
-  .number {
-    // margin-left: -100px;
-    width: 400px;
-    background: #ffffff;
-    box-shadow: 0px 73px 80px rgba(0, 0, 0, 0.06);
-  }
+.box{
+display: none;
+}
   .card {
     margin: 0 auto;
   }
