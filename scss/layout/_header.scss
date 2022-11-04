@@ -8,6 +8,11 @@
   .navbar {
     padding-top: 45px;
     padding-bottom: 45px;
+    transition: 5s;
+  }
+  .navbar.navbar-shrink {
+    box-shadow: 0 0 5px grey;
+    padding: 10px 0;
   }
   a {
     color: #a1b5bb;
@@ -54,5 +59,4 @@
     padding-top: 15px;
     text-align: center;
   }
-  
 }

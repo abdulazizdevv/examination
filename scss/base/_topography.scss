@@ -142,3 +142,25 @@ body {
     height: 120px;
   }
 }
+.card {
+  cursor: pointer;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198);
+  img {
+    margin-top: 43px;
+    width: 25px;
+  }
+}
+.card:hover {
+  img{
+    background-color: var(--btn-color);
+  }
+  h5 {
+    color: white;
+  }
+  p {
+    color: #b2bbbd;
+  }
+  background-color: var(--h-color);
+}

@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header class="header sticky-top">
-        <div class="container">
+    <header class="header sticky-top ">
+        <div class="container ">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
@@ -105,20 +105,78 @@
         </section>
         <section id="#service" class="three">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="three__page m-auto mb-3">Services</p>
-                        <h1 class="build m-auto">Building Digital Product
-                            With Better Experience</h1>
+                <div data-aos="fade-up"></div>
+                <p class="three__page m-auto mb-3">Services</p>
+                <h1 class="build m-auto ">Building Digital Product
+                    With Better Experience</h1>
+                <div data-aos="fade-up" class="row pt-5">
+                    <div class="col-lg-3 col-lg-4 col-md-6">
+                        <div class="card " data-aos="fade-up" style="width: 18rem;">
+                            <img src="./images/anchor.png" class="card-img-top ms-3" alt="icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">I’ve created a user interface
+                                    and user experience with
+                                    some proccess and method.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-lg-4 col-md-6">
+                        <div class="card " data-aos="fade-up" style="width: 18rem;">
+                            <img src="./images/anchor.png" class="card-img-top ms-3" alt="icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">I’ve created a user interface
+                                    and user experience with
+                                    some proccess and method.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-lg-4 col-md-6">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/eyes.png" class="card-img-top ms-3" alt="icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">I’ve created a user interface
+                                    and user experience with
+                                    some proccess and method.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-lg-4 col-md-6">
+                        <div class="card " data-aos="fade-up" style="width: 18rem;">
+                            <img src="./images/anchor.png" class="card-img-top ms-3" alt="icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">I’ve created a user interface
+                                    and user experience with
+                                    some proccess and method.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
 
 
 
     <script src="./style/main.js"></script>
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 150) {
+                document.getElementById("navbar").classList.add("navbar-shrink");
+            } else {
+                document.getElementById("navbar").classList.remove("navbar-shrink");
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
