@@ -242,6 +242,24 @@ body {
   line-height: 29px;
 }
 
+.four .mains {
+  color: var(--h-color);
+  font-weight: 600;
+}
+
+.four .pages {
+  color: var(--p-color);
+}
+
+.four .read {
+  text-decoration: none;
+  color: var(--h-color);
+}
+
+.four .read:hover {
+  color: var(--btn-color);
+}
+
 .header {
   background-image: url("../../images/background.png");
   background-color: var(--background-color);

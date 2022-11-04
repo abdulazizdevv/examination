@@ -181,4 +181,19 @@ body {
     font-size: 18px;
     line-height: 29px;
   }
+  .mains {
+    color: var(--h-color);
+    font-weight: 600;
+  }
+  .pages{
+    color: var(--p-color);
+  }
+  .read{
+    text-decoration: none;
+    color: var(--h-color);
+  }
+  .read:hover{
+    color: var(--btn-color);
+
+  }
 }
