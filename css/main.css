@@ -8,6 +8,92 @@
   --p-color: #757575;
 }
 
+#carousel .carousel-item img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#carousel .carousel-fade .carousel-item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+#carousel .carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+#carousel .container {
+  padding: 0;
+}
+
+#carousel .carousel-control-prev, #carousel .carousel-control-next {
+  top: auto;
+  bottom: auto;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffa800;
+  border-radius: 50%;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#carousel .carousel-control-prev:hover, #carousel .carousel-control-next:hover {
+  background-color: #ffa800;
+}
+
+#carousel .carousel-control-prev {
+  left: calc(50% + 100px);
+}
+
+@media screen and (max-width: 768px) {
+  #carousel .carousel-control-prev {
+    top: 15px;
+    right: 85px;
+    left: auto;
+  }
+}
+
+#carousel .carousel-control-prev:hover > .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>") !important;
+}
+
+#carousel .carousel-control-prev-icon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255, 166, 58)'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+}
+
+#carousel .carousel-control-next {
+  left: calc(50% + 180px);
+}
+
+@media screen and (max-width: 768px) {
+  #carousel .carousel-control-next {
+    top: 15px;
+    right: 15px;
+    left: auto;
+  }
+}
+
+#carousel .carousel-control-next:hover > .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+#carousel .carousel-control-next-icon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255, 166, 58)'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+/* .carousel-container {
+  background-color: #555;
+} */
 @media screen and (max-width: 576px) {
   .brother {
     margin-left: -70px;
@@ -258,6 +344,60 @@ body {
 
 .four .read:hover {
   color: var(--btn-color);
+}
+
+.four .read:hover img {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+@property --k {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.portfolio_img {
+  --k: 0;
+  --j: calc(1 - var(--k));
+  --list: transparent calc(50% - 3vmin), red 0 calc(50% + 3vmin), transparent 0;
+  place-self: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60%;
+  height: 60%;
+  -webkit-filter: grayScale(var(--j));
+          filter: grayScale(var(--j));
+  --mask: radial-gradient(
+      closest-side,
+      red calc(70% - 1px),
+      transparent 70%
+    ),
+    radial-gradient(
+      closest-side,
+      transparent calc(70% - 15% + var(--k) * 0.1 *15% - 1px),
+      red calc(70% - 15% + var(--k) * 6 *15%)
+        calc(var(--k) * 100% + var(--j) *70% - 1px),
+      transparent calc(var(--k) * 100% + var(--j) *70%)
+    ),
+    linear-gradient(var(--list)), linear-gradient(90deg, var(--list)),
+    linear-gradient(45deg, var(--list)), linear-gradient(-45deg, var(--list));
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  -webkit-mask-composite: add, intersect, add, add;
+          mask-composite: add, intersect, add, add;
+  transition: --k 0.3s ease-out;
+}
+
+.portfolio_img:hover {
+  --k: 1;
+}
+
+.vector {
+  width: 16px;
+  height: 56px;
 }
 
 .header {
