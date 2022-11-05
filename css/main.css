@@ -194,6 +194,8 @@ body {
 }
 
 .card {
+  -webkit-transition: 1S;
+  transition: 1S;
   cursor: pointer;
   border: none;
   background: #ffffff;
@@ -202,6 +204,8 @@ body {
 }
 
 .card img {
+  -webkit-transition: 1s;
+  transition: 1s;
   margin-top: 43px;
   width: 25px;
 }
