@@ -514,6 +514,8 @@ header {
   padding: 1rem 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 0 10px 10px 0  #0a475a;
+          box-shadow: 0 10px 10px 0  #0a475a;
 }
 
 .header {
@@ -528,8 +530,6 @@ header {
 
 .header .navbar-shrink {
   background-color: #0a475a;
-  -webkit-box-shadow: 0 0 8px #086e8d;
-          box-shadow: 0 0 8px #086e8d;
   padding: 5px !important;
 }
 

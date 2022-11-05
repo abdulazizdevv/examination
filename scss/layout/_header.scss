@@ -2,6 +2,7 @@ header {
   background-color: var(--background-color);
   padding: 1rem 0;
   transition: 0.5s;
+  box-shadow: 0 10px 10px 0  #0a475a; 
 }
 
 .header {
@@ -14,10 +15,9 @@ header {
   }
   .navbar-shrink {
     background-color: #0a475a;
-    box-shadow: 0 0 8px #086e8d;
     padding: 5px !important;
   }
-
+  
   a {
     color: #a1b5bb;
   }
