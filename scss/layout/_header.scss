@@ -5,12 +5,20 @@
     border-color: #bbbbcb;
     background-color: #ffffff;
   }
-  .navbar {
-    padding-top: 45px;
-    padding-bottom: 45px;
-    transition: 5s;
+  #navbar-shrink {
+    background-image: url("../../images/background.png");
+
+    overflow: hidden;
+    background-color: var(--background-color);
+    transition: 0.4s;
+    position: fixed;
+      box-shadow: 0  5px grey;
+      padding: 10px 0;
+    width: 1200px;
+    top: 0;
+    z-index: 99;
   }
-  .navbar.navbar-shrink {
+  #navbar.navbar-shrink {
     box-shadow: 0 0 5px grey;
     padding: 10px 0;
   }
