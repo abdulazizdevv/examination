@@ -523,15 +523,10 @@ header {
 }
 
 .header .navbar-shrink {
-  -webkit-box-shadow: 0 0 5px grey;
-          box-shadow: 0 0 5px grey;
-  padding: 10px 0;
-}
-
-.header #navbar.navbar-shrink {
-  -webkit-box-shadow: 0 0 5px grey;
-          box-shadow: 0 0 5px grey;
-  padding: 10px 0;
+  background-color: #0a475a;
+  -webkit-box-shadow: 0 0 8px #086e8d;
+          box-shadow: 0 0 8px #086e8d;
+  padding: 5px !important;
 }
 
 .header a {

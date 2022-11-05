@@ -13,13 +13,11 @@ header {
     background-color: #ffffff;
   }
   .navbar-shrink {
-    box-shadow: 0 0 5px grey;
-    padding: 10px 0;
+    background-color: #0a475a;
+    box-shadow: 0 0 8px #086e8d;
+    padding: 5px !important;
   }
-  #navbar.navbar-shrink {
-    box-shadow: 0 0 5px grey;
-    padding: 10px 0;
-  }
+
   a {
     color: #a1b5bb;
   }
