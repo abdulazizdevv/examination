@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <header class="header" >
-        <div class="container " >
-            <nav class="navbar navbar-expand-lg " id="navbar-shrink">
+    <header class="header " id="navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -502,19 +502,17 @@
 
 
     <script>
-       
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar-shrink").style.padding = "30px 10px";
-            document.getElementById("logo").style.fontSize = "25px";
-          } else {
-            document.getElementById("navbar-shrink").style.padding = "80px 10px";
-            document.getElementById("logo").style.fontSize = "35px";
-          }
+       window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 150) {
+          document.getElementById("navbar").classList.add("navbar-shrink");
+        } else {
+          document.getElementById("navbar").classList.remove("navbar-shrink");
         }
-        </script>
+      }
+    </script>
     <script src="./style/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

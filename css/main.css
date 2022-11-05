@@ -505,6 +505,13 @@ body {
   color: #08546c;
 }
 
+header {
+  background-color: var(--background-color);
+  padding: 1rem 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .header {
   background-image: url("../../images/background.png");
   background-color: var(--background-color);
@@ -515,19 +522,10 @@ body {
   background-color: #ffffff;
 }
 
-.header #navbar-shrink {
-  background-image: url("../../images/background.png");
-  overflow: hidden;
-  background-color: var(--background-color);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  position: fixed;
-  -webkit-box-shadow: 0  5px grey;
-          box-shadow: 0  5px grey;
+.header .navbar-shrink {
+  -webkit-box-shadow: 0 0 5px grey;
+          box-shadow: 0 0 5px grey;
   padding: 10px 0;
-  width: 1200px;
-  top: 0;
-  z-index: 99;
 }
 
 .header #navbar.navbar-shrink {
