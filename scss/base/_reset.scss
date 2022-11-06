@@ -28,7 +28,17 @@
   //   flex-direction: column;
   // }
   .bulid{
-    margin-bottom: 190px;
+    padding-bottom: 50px;
+  }
+  .media-card{
+    display: flex;
+    gap: 20px;
+  }
+  .four__portfolio{
+    width: 100% !important;
+  }
+  .four_explore{
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 760px) {
