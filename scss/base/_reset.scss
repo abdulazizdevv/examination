@@ -6,23 +6,33 @@
     display: none;
   }
   .box {
-   display: none;
-    .number {
-      margin-left: -100px;
-      background: #ffffff;
-      box-shadow: 0px 73px 80px rgba(0, 0, 0, 0.06);
+    display: none;
+  }
+  .card {
+    margin: 0 auto;
+  }
+  .first {
+    .building {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 50px;
+      color: #ffffff;
     }
   }
-  .card {
-    margin: 0 auto;
+  .end_btn {
+    margin-bottom: 50px;
+    margin-left: -70px;
   }
+  // .all{
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 }
 @media screen and (max-width: 760px) {
-.box{
-display: none;
-}
+  .box {
+    display: none;
+  }
   .card {
     margin: 0 auto;
   }
 }
-
